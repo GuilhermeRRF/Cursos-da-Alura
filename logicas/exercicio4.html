@@ -1,0 +1,163 @@
+<meta charset="utf-8">
+
+<script>
+
+
+/*exemplo 1*/
+
+/*
+function pularLinha(){
+
+document.write("<br><br>");
+
+};
+
+function mostra(frase){
+
+	document.write(frase);
+	pularLinha();
+};
+
+var pesoGuilherme = 70;
+var alturaGuilherme = 1.71;
+
+
+var imcFlavio = (pesoGuilherme / (alturaGuilherme * alturaGuilherme));
+
+
+mostra("O imc do Flávio é " + imcFlavio);
+
+var pesoAmigo = 68;
+var alturaAmigo = 1.72;
+var imcAmigo = (pesoAmigo /(alturaAmigo * alturaAmigo));
+
+mostra("O imc do meu Amigo é:" +imcAmigo);
+
+
+/*Exemplo 2*/
+/*
+function pularLinha(){
+
+document.write("<br><br>");
+
+};
+
+function mostra(frase){
+
+	document.write(frase);
+	pularLinha();
+};
+
+function cauculaImc(peso, altura){/*criamos uma função para caucular o imc com os parametros de peso e altura e mostrar o resultado na tela
+
+var imc = (peso / (altura * altura));
+mostra("O imc do meu Amigo é:" +imc);
+
+
+};
+
+
+cauculaImc(70,1.75);//chamando função com valores de peso e altura
+cauculaImc(68, 1.72);//chamando função com valores de peso e altura
+*/
+
+
+/*Exemplo 3*/
+/*
+
+function pularLinha(){
+
+document.write("<br><br>");
+
+};
+
+function mostra(frase){
+
+	document.write(frase);
+	pularLinha();
+};
+
+function cauculaImc(peso, altura){/*criamos uma função para caucular o imc com os parametros de peso e altura e mostrar o resultado na tela
+
+var imc = (peso / (altura * altura));
+
+return imc; /*return o valor da imc
+
+};
+
+
+var imcFlavio = cauculaImc(70,1.75);//criando a variavel imcFlavio que recebe o cauculo imc com os valores de peso e altura
+var imcAmigo = cauculaImc(68, 1.72);//criando a variavel imcAmigo que recebe o cauculo imc com os valores de peso e altura
+
+mostra(imcFlavio);
+mostra(imcAmigo);
+*/
+
+
+/*Exemplo 4*/
+
+/*
+function pularLinha(){
+
+document.write("<br><br>");
+
+};
+
+function mostra(frase){
+
+	document.write(frase);
+	pularLinha();
+};
+
+function cauculaImc(peso, altura){/*criamos uma função para caucular o imc com os parametros de peso e altura e mostrar o resultado na tela
+
+return imc = (peso / (altura * altura));
+
+
+};
+
+
+var totalImc = cauculaImc(70,1.75) + cauculaImc(68, 1.72);//criando a variavel imcFlavio que recebe o cauculo imc com os valores de peso e altura
+
+
+document.write("A soma dos icm's é" + totalImc);
+*/
+
+
+/*Exemplo 5*/
+
+
+function pularLinha(){
+
+document.write("<br><br>");
+
+};
+
+function mostra(frase){
+
+	document.write(frase);
+	pularLinha();
+};
+
+function cauculaImc(altura, peso){/*criamos uma função para caucular o imc com os parametros de peso e altura e mostrar o resultado na tela*/
+
+return (peso / (altura * altura));
+
+
+};
+
+/*no console do navegador podemos fazer alguns comando de prompt, prompt("informe a sua altura"),var altura = prompt("informe a sua altura");,altura
+*/
+
+var nome = prompt("Infome seu nome");
+
+var alturaInformada =prompt(nome + ", Infome sua altura");/*usamos o prompt pro usuairo interagir ao regarregar a pagina com o control r, o usuario pode inserir o valor que é armazenado na variavel*/
+var pesoInformado = prompt(nome+ ", Infome seu peso");
+
+var imc = cauculaImc(alturaInformada, pesoInformado);
+
+document.write(nome +"O seu  IMC  é " +imc);
+
+
+
+</script>

@@ -1,0 +1,122 @@
+
+header{
+
+	background: #CCCCCC;
+	padding: 20px 0;
+
+}
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0px;
+	background: #CCCCCC;
+}
+.caixa{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav li{
+	display:inline;
+	margin: 0 0 0 15px;
+}
+nav a{
+	text-transform: uppercase;
+	color:#000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+
+}
+main{/*queremos centralizar o conteudo e colocar 940px que é uma das resoluções mais utilizadas*/
+	width: 940px;
+	margin: 0 auto;
+}
+form{/*margem de 40px em cima e em beixo e 0 de um lado e do outro*/
+	margin: 40px 0;
+}
+form label, form legend{/*se repararmos os formularios são do tipo inline, eles so ocupam o espaço do seu conteudo 
+fazendo com que os formualarios fiquem um do lado do outro se forem pequenos, usando o display block 
+para que cada componente passe a ocupar uma linha inteira, fazendo com que os formularios passem a ficar 
+um em baixo do outro ja que estaram ocupando a linha toda de espaço*/
+
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+
+}
+.input-padrao{/*usando o display block com o mesmo proposito do label,usamos a 
+virgula para que o proximo componente que escrevermos ali tenha a mesma configuração*/
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+.checkbox{
+	margin: 20px 0;
+}
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;/*mudar a velocidade do hover de todos os componentes, existem varios tipos de transition*/
+	cursor: pointer;/*pra seta mudar pra mãozinha*/
+}
+
+.enviar:hover{
+	background: darkorange;
+	transform:scale(1.2) ;/*aumenta o tamanho do botão*/
+}
+table{
+	margin: 20px 0 40px;
+}
+
+thead{
+	background:#555555 ;
+	color: white;
+	font-weight: bold;
+}
+td, th{
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+
+
+footer{
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0; 
+}
+.Copyright{
+	color: white;
+	font-size: 13px;
+	margin: 20px;
+
+}
+/*css da pagina inicial*/
+.banner{
+	width: 100%;
+}
+.titulo-principal{
+	text-align: center;
+	font-size: 2em;/*uma medida em, sabemeos que a fonte padrão é 12 então a medida é o dobro da fonte padrão*/
+	margin: 0 0 1em;
+}
+.principal p{
+	margin: 0 0 1em;
+}
+.principal strong{
+	font-weight: bold;
+}
+.principal em{
+	font-style: italic;
+}
+.imagensbeneficios{
+	width: 60% ;
+}

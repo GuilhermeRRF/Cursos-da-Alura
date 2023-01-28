@@ -1,0 +1,187 @@
+<meta charset="utf-8">
+
+
+<!--futebool-->
+
+
+<script>
+
+
+/*Exemplo 1*/
+
+/*
+	
+function pularLinha(){
+
+	document.write("<br><br>");
+}
+
+function mostrar(letra){
+
+	document.write(letra);
+	pularLinha();
+}
+
+
+var vitorias = parseInt(prompt("Entre com o numeros de vitorias"));/*o prompt entende tudo como string para isso temos que converter o numero que for digitado pelo usuario para numero com o parseInt()
+
+var empates = parseInt(prompt("Entre com o numero de empates"));
+
+
+var pontos = (vitorias * 3) + empates;
+
+
+
+mostrar("os pontos do seu time é:" +pontos);
+
+if(pontos > 28){
+
+mostrar("Seu time esta melhor do que o ano passado.");
+
+}
+if(pontos < 28){
+
+mostrar("Seu time esta pior que o ano passado");
+
+}
+
+if (pontos == 28){
+mostrar("Seu time está igual o ano passado");
+
+}
+
+mostrar("FIM");
+*/
+
+
+
+/*Exemplo 2*/
+/*
+
+function pularLinha(){
+
+document.write("<br><br>");
+
+};
+
+function mostra(frase){
+
+	document.write(frase);
+	pularLinha();
+};
+
+function cauculaImc(altura, peso){/*criamos uma função para caucular o imc com os parametros de peso e altura e mostrar o resultado na tela
+
+return (peso / (altura * altura));
+
+
+};
+
+var nome = prompt("Infome seu nome");
+
+var alturaInformada =prompt(nome + ", Infome sua altura")
+var pesoInformado = prompt(nome+ ", Infome seu peso");
+
+var imc = cauculaImc(alturaInformada, pesoInformado);
+
+mostra(nome +" O seu  IMC  é " +imc);
+
+if(imc < 18.5){
+	mostra("Você está abaixo do recomendado");
+};
+
+if(imc  >= 35){
+	mostra("Você está acima do recomendado");
+}
+/*
+if(imc >= 18.5){
+
+	if(imc <= 35){
+		mostra("Seu IMC está excelente!")
+
+	}
+}
+
+ou 
+
+
+if((imc >= 18.5)&&(imc <= 35)){
+
+		mostra("Seu IMC está excelente!");
+
+};
+
+*/
+
+/*Exemplo 4*/
+/*
+
+
+function pularLinha(){
+
+document.write(" <br><br> ");
+
+};
+
+function mostra(frase){
+
+	document.write(frase);
+	pularLinha();
+};
+
+
+var numeroPensado = Math.round(Math.random() * 10); /* começamos utilizando o Math.round para arredondar o numero depoís utilizamos o Math.random pois ele é responsalvei por gerar valores aleatorios de 0 a 10 se eu quisesse de 0 a 1000 eu colocaria * 1000
+
+var chute = parseInt(prompt(" Digite seu chute! "));
+
+if(chute == numeroPensado){
+	mostra(" Voce acertou! ")
+}
+else{
+	mostra(" Voce errou, numero pensado foi " + numeroPensado);
+}
+
+*/
+
+ /*Exemplo 5*/
+
+
+function pularLinha(){
+
+document.write(" <br><br> ");
+
+};
+
+function mostra(frase){
+
+	document.write(frase);
+	pularLinha();
+};
+
+
+var numeroPensado = Math.round(Math.random() * 10); 
+
+
+var tentativas = 1;
+
+while( tentativas <= 3 ){
+
+var chute = parseInt(prompt(" Digite seu chute! "));
+
+if(chute == numeroPensado){
+
+	mostra(" Voce acertou! ");
+	break; /*força a parada do loop*/
+
+}else{
+
+	mostra(" Voce errou !");
+	
+	}
+
+	tentativas ++;
+}
+	mostra("FIM");
+
+</script>
+ 

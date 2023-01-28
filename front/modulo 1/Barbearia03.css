@@ -1,0 +1,15 @@
+
+body{
+	background: #CCCCCC;
+}
+p{
+	text-align: center;
+}
+
+ em strong{/*usamos a tag em e strong para especificar que queremos a
+  cor vemelha somente para as letras que estiverem na tag strong dentro da tag em */
+
+	color: red;
+
+
+}

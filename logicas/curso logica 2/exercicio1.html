@@ -1,0 +1,41 @@
+<!--Não utilizamos tag meta pois aqui iremos desenhar e não escrever-->
+
+<canvas width="600" height="400">
+	
+
+
+</canvas>
+
+<script>
+
+
+var tela = document.querySelector("canvas");/*pegar a tag que queremos manipular*/
+var pincel = tela.getContext("2d");/*criando pincel onde escolhemos o tipo de peincel que queremos pintar*/
+
+pincel.fillStyle = "lightgrey";/*para preencher um retangulo*/
+pincel.fillRect(0,0, 600,400);/*aqui escolhemos a posiçao que sera pintado com base no plano cartesioano*/
+
+
+pincel.fillStyle = "green";
+pincel.fillRect(0,0, 200,400);
+
+
+pincel.fillStyle ="red";
+pincel.fillRect(400,0, 200,400);
+
+pincel.fillStyle = "yellow";
+pincel.beginPath();/*chamamos essa funcao do pincel pra iniciar a escrita do meu caminho */
+pincel.moveTo(300,200);/*metodos mova-se até*/
+pincel.lineTo(200,400);/*metodos uma linha até a posição que eu quero*/
+pincel.lineTo(400,400);
+pincel.fill();/*comando pra preencher*/
+
+/*obs para a construção do triangulo percebemos que foi feito um caminho apartir das rotas dadas*/
+
+pincel.fillStyle = "blue";
+pincel.beginPath();/*criando um novo caminho*/
+pincel.arc(300,200,50,0,2 * 3.14);
+pincel.fill();
+
+
+</script>

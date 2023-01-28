@@ -1,0 +1,262 @@
+
+
+body{
+	font-family: 'Montserrat', sans-serif;/* esse  é outro codigo do google fonts*/
+}
+header{
+
+	background: #bbbbbb;
+	padding: 20px 0;
+
+}
+.caixa{/*chamamos a div caixa*/
+	position: relative;/*usamos o position relativo para ele levantar(desgrundar do ponto inicial),
+	para que assim a caixa tenha um ponto absoluto igual o absolute da tag nav dentro de uma caixa 
+	sendo essa caixa a div*/
+	width: 940px;
+	margin: 0 auto;/*usamos esse comando para deixar a margem da direita e esquerda seja cauculada 
+	automaticamente*/
+}
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0px;/*quando colocamos igual a zero ele fica colado do lado que colocamos*/
+}
+
+nav li{
+	display:inline;
+	margin: 0 0 0 15px;
+}
+nav a{
+	text-transform: uppercase;/*deixa o texto todo maiusculo*/
+	color:#000000;
+	font-weight: bold;/*deixa o texto em negrito*/
+	font-size: 22px;
+	text-decoration: none;/*formata a letra*/
+
+}
+
+nav a:hover{
+	color: red;
+	text-decoration: uppercase;
+}
+.produtos{
+	width:940px;
+	margin: 0 auto;	
+	padding: 50px 0;
+}
+
+.produtos li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	border: solid 2px black;
+	border-top-width: 10px/*exitem varios tipos de borda*/;
+	border-radius: 10px;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing:  border-box;/*hoje o navagador estão somando percentual mais os pixcel,
+    temos como mudar isso fazendo com que os espaçamentos laterais estejam
+    dentro do percentua, assim a minha largura que no caso aqui é 30% são definitivos
+    são sempre a largura e os pixcel de espaçameto interno em baixo estão dentro desses
+    30%*/
+}
+.produtos li:hover{/*o hover é utilizado para mudar o elemento quando o mause passar por cima dele*/
+	border-color: red;
+	font-size: 40px;
+}
+
+.produtos li:active{/*o active é utilizado para mudar o elemento quando o mause clica por cima dele*/
+	border-color: #088C19;
+}
+.produtos li:hover h2{
+	font-size: 34px;
+}
+
+ em strong{/*usamos a tag em e strong para especificar que queremos a
+  cor vemelha somente para as letras que estiverem na tag strong dentro da tag em */
+
+	color: red;
+
+}
+
+
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+.produtos-descricao{
+	font-size: 18px;
+}
+
+.produtos-preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0;
+}
+
+footer{
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0; 
+}
+.Copyright{
+	color: white;
+	font-size: 13px;
+	margin: 20px;
+
+}
+
+
+/*position absolute,relative o position relativo e quando queremos mexer 
+em um componente que tem o ponto inicial exatamente ali onde ele esta ou 
+seja a gente vai mexer nele mas o ponto inicial dele vai continuar ali,
+o absolute é quando queremos que o ponto inicial seja iniciado em outra 
+parte da pagina fazendo com que a gente consiga mover esse componente pra 
+qualquer parte da pagina*/
+
+/*css da pagina inicial*/
+.banner{
+	width: 100%;
+}
+.principal{
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;/*o alinhamento na main é feito aqui*/
+	margin: 0 auto;
+}
+.titulo-principal{
+	text-align: center;
+	font-size: 2em;/*medida em, a medida padrão da font é 12 essa medida 
+	"em" dobra a medida padrao da fonte que seria a medida base*/
+	margin: 0 0 1em;
+	clear: left;/*usamos o clear nos elementos a baico do float limpando o float com clear left*/
+}
+.principal strong{
+	font-weight: bold;
+}
+.principal em{
+	font-style: italic;
+}
+
+.beneficios{
+	padding: 3em 0;
+	background: #888888;
+}
+	
+.mapa{/*mexendo no mapa da pag*/
+	padding: 3em 0 ;
+	background: linear-gradient(#FFFFFF, #888888);/*para fazer um degrade de cores existem varias formas*/
+}
+.mapa-conteudo{
+	width: 940px;/*o alinhamento na main é feito aqui*/
+	margin: 0 auto;
+}
+
+.mapa p{
+	margin: 0 0 2em;
+	text-align: center;
+}
+.video{
+	width:560px ;
+	margin: 2em auto;/*alinhando o video na pagina*/
+}
+
+.utensilios{
+	width: 150px;
+	float: left;/*float ou flutuação onde conseguimos escolher o lado que ele pode ficar colado*/
+	margin: 0 20px 20px 0;
+}
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;/*quando estamos usando o inlime block para juntar as coisas devemos deixar
+	no html as coisas queremos que fiquem uma do lado da outra junta tambem*/
+}
+
+.itens{
+	line-height: 1.5;
+}
+
+.itens:first-child{/*pixel dos elementos temos tres opção de comando mas utizamos o first-child ao 
+inves de criar uma outra class para deixar a primeira letra da lista em negrito*/
+	font-weight: bold;
+
+}
+.itens:before{
+	content: "✯";/*peguei essa estrela no unicode*/
+}
+
+.imagem-beneficios{
+	width: 60% ;
+	text-align: center;
+	vertical-align:top;
+	box-shadow: 10px 10px 10px #000000;
+}
+
+/*responsivo*/
+
+@media screen and (max-width: 480px){/*escolhemos o tipo de tela que geralmente é o scren e o tamanho
+da tela que nesse caso a largura maxima seja até 480px */
+	.caixa,.principal,.conteudo-beneficios,.mapa-conteudo,.video{
+		width: auto;
+
+	}
+	h1{
+		text-align: center;
+
+	}
+	nav{
+		position: static;
+	}
+	.lista-beneficios,.imagem-beneficios{
+		width: 100%;
+	}
+}
+
+
+
+/*OBS:quando a gente esta sobrescrevendo pra fazer um layout responsivo a gente mexe so no que a gente quer que mude*/
+
+/*OBS:*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*comandos do css 3 avançado*/
+
+/*seletores existem seletores avançados que ajudam a gente a trocar cor ou fazer alterações simples em itens especificos
+sem precisar criar outra classe pra isso qualquer duvida pesquisar a respeito*/
+
+
+/*calc existem formas de fazer somas de largura ou de altura no proprio comando usando o caulc mais as medidas que 
+queremos caucular qualquer duvida pesquisar a respeito*/
+
+
+/*opacidade temos como abaixar o brilho de diversos itens no css usando opacidade qualquer duvida pesquisar mais a respeito*/
+
+/*box-shadow com esse comando podemos usar sombras em volta de elementos existem varios comandos a respeito qualquer duvida 
+pesquisar a respeito disso*/

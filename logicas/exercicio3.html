@@ -1,0 +1,79 @@
+<meta charset="utf-8">
+
+<!--funções-->
+
+<!--funções é um atalho pra outras ações que eu quero executar no meu programa-->
+
+
+<script>
+	
+/*Exemplo 1 
+
+var pularLinha = "<br><br>";
+
+var ano = 2017;/*sempre quando usarmos o "=" temos que ter em mente que é o recebe 
+document.write(pularLinha);
+document.write("Guilherme nasceu em "+(ano- 39)+" anos");
+document.write(pularLinha);
+document.write("Guilherme nasceu em "+(ano - 20)+" anos");
+document.write(pularLinha);
+document.write("Guilherme nasceu em "+(ano - 40)+" anos");*/
+
+/*Exemplo 2*/
+
+/*criando uma função
+
+function pularLinha() {/*escreva a palavra especial function e o nome da função depois abre e fecha parenteses  abre chaves dentro da chaves é colocado a expressão por ultimo fecha chaves,depois para chamar a função e so chamar pelo o nome e abrir e fechar parenteses
+
+document.write("<br> <br>");
+
+};
+
+
+var ano = 2017; /*sempre quando usarmos o "=" temos que ter em mente que é o recebe
+
+document.write("Guilherme nasceu em "+(ano- 39)+" anos");
+
+pularLinha();//chamando função
+
+document.write("Guilherme nasceu em "+(ano - 20)+" anos");
+
+pularLinha();
+
+document.write("Guilherme nasceu em "+(ano - 40)+" anos");
+
+pularLinha();
+
+*/
+/*Exemplo 3 aula 5 */
+
+function pularLinha() {
+
+document.write("<br> <br>");
+
+};
+
+
+function mostrar(frase){ /*colocando parametro*/
+
+	document.write(frase);/*chamando parametro */
+    pularLinha();//chamando função
+
+
+/*o que estiver escrito dentro dos parenteses da função mostrar sera armazenado no parametro frase, pois o frase é como se fosse uma variavel, na função mostrar esta o valor da variavel e quando chamamos o valor da varivel denovo que no caso é frase, ele mostra o valor, mostrado na tela em ordem*/
+}
+
+
+var ano = 2017; /*sempre quando usarmos o "=" temos que ter em mente que é o recebe*/
+
+mostrar("Guilherme nasceu em "+(ano- 39)+" anos");
+
+
+mostrar("Guilherme nasceu em "+(ano - 20)+" anos");
+
+
+mostrar("Guilherme nasceu em "+(ano - 40)+" anos");
+
+
+</script>
+

@@ -1,0 +1,68 @@
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+/*
+
+/*exemplo 1
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+pincel.fillStyle = "green";
+pincel.fillRect(0,0,50,50);
+pincel.fillStroke = 'black';
+pincel.strokeRect(0,0,50,50);/*comando usado para borda
+
+pincel.fillRect(50, 0, 50, 50);
+pincel.strokeRect(50, 0, 50, 50);
+
+pincel.fillRect(100, 0, 50, 50);
+pincel.strokeRect(100, 0, 50, 50);
+
+*/
+
+/*exemplo 2
+
+function desenhoQuadrado(x,y,cor){/*colocamos variaveis que iremos utlizar e depois adicionamos elas no codigo
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+pincel.fillStyle = cor;
+pincel.fillRect(x,y,50,50);/*quando utilizamos a função colocamos o x na cordenada
+pincel.fillStroke = 'black';
+pincel.strokeRect(x,y,50,50);/*comando usado para borda
+
+}
+
+
+desenhoQuadrado(0,0,'blue');/*onde colocamos o x indicamos a cordenada dentro dos parenteses
+desenhoQuadrado(0, 50,'red');
+desenhoQuadrado(0, 100,'yellow');
+
+*/
+
+/*exemplo03*/
+
+function desenhoQuadrado(x,y,cor){
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+pincel.fillStyle = cor;
+pincel.fillRect(x,y,50,50);
+pincel.fillStroke = 'black';
+pincel.strokeRect(x,y,50,50);
+
+}
+
+
+for(var x = 0; x < 600; x = x + 50){/*enquanrto x for menor que 600 crie um quadrado*/
+	desenhoQuadrado(x,0,'green')/*posição do quadrado e cor*/
+}
+
+
+
+
+</script>

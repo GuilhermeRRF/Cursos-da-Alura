@@ -1,0 +1,94 @@
+header{
+
+	background: #bbbbbb;
+	padding: 20px 0;
+
+}
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0px;/*quando colocamos igual a zero ele fica colado do lado que colocamos*/
+}
+.caixa{/*chamamos a div caixa*/
+	position: relative;/*usamos o position relativo para ele levantar(desgrundar do ponto inicial),
+	para que assim a caixa tenha um ponto absoluto igual o absolute da tag nav dentro de uma caixa 
+	sendo essa caixa a div*/
+	width: 940px;
+	margin: 0 auto;/*usamos esse comando para deixar a margem da direita e esquerda seja cauculada 
+	automaticamente*/
+}
+
+nav li{
+	display:inline;
+	margin: 0 0 0 15px;
+}
+nav a{
+	text-transform: uppercase;/*deixa o texto todo maiusculo*/
+	color:#000000;
+	font-weight: bold;/*deixa o texto em negrito*/
+	font-size: 22px;
+	text-decoration: none;/*formata a letra*/
+
+}
+
+nav a:hover{
+	color: red;
+}
+
+
+#banner{/*quando usamos o id como identificador é necessario utilizar o "#" antes do
+ nome de identificação*/
+
+	width: 100%;
+	height: 500px;
+}
+p{
+	text-align: center;
+}
+
+ em strong{/*usamos a tag em e strong para especificar que queremos a
+  cor vemelha somente para as letras que estiverem na tag strong dentro da tag em */
+
+}
+
+#missao{
+	font-size:20px;
+
+}
+em strong{
+	color: #ff0000;
+}
+
+.itens{/*quando usamos a class como identificador é necessario colocar um "." antes 
+do nome de identificação*/
+
+	font-style: italic;
+}
+.Beneficios{
+	background: #ffffff;
+	padding: 20px;
+}
+
+.imagensbeneficios{
+	width: 50%;
+}
+ ul{
+ 	display: inline-block;
+ 	vertical-align: top;/*para alinhar os itens apartir da linha de cima*/
+ 	width: 20%;
+ 	margin-right:15% ;
+ }
+
+
+/*paddig aumenta o espaçamento interno do elemento*/
+
+obs sobre inline-block/*todos as tags tem comportamentos de blocos nas quais ocupam 
+a linha toda fazendo com que o proximo item fique em baixo dela o inline-block serve 
+justamente para uma imagem não bloqueia o conteudo ela deixa que tenha outro conteudo 
+do lado dela e esse tipo de conteudo é considerada inline, a diferença entre um elemento 
+block e um inline é que mesmo eu diminuindo a largura de um elemento block ele sempre 
+vai ocupar a linha toda mesmo mostrando metade, um elemento inline ele não me deixa 
+alterar o espaçamento interno e externo dele, pra isso tem uma terceira função que é 
+quando ele tem essas duas caracteristicas é chamado de inline-block, ou seja ele bloqueia
+uma largura mais essa largura e fixa é a gente que da esse tamenho, e ele deixa tambem
+mexer na sua largura espaçamento interno e espaçamento externo*/
