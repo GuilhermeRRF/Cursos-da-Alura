@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <!-- O nome "loja" é a sua Persistence Unit. Você usará esse nome no código Java -->
+    <persistence-unit name="loja" transaction-type="RESOURCE_LOCAL">
+
+        <!-- Define o Hibernate como o motor de persistência -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <properties>
+            <!-- Dados de Conexão com o Banco de Dados -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/nome_do_seu_banco" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="sua_senha" />
+
+            <!-- Configurações do Dialeto do Hibernate para traduzir o Java em SQL correto -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
+
+            <!-- Ferramentas Extras: Mostra o SQL gerado no console e formata o texto -->
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+
+            <!-- Cria as tabelas automaticamente no banco se elas não existirem -->
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+        </properties>
+
+    </persistence-unit>
+</persistence>
+
+
+<!-- OBS: isso serve para fazer todas as configurar necessarias para acessar o banco  -->
